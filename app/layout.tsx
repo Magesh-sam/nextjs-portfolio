@@ -1,3 +1,4 @@
+import { Navbar } from '@/components/Navbar';
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next'
@@ -29,7 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
+      <body className={inter.className}>
+        <Navbar/>
+        {children}
       <Analytics/>
       </body>
     </html>
