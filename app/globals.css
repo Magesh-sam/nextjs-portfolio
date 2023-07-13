@@ -2,122 +2,159 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --background:#121212;
-    --primary-text:rgba(255, 255, 255, 87%);
-    --secondary-text: rgba(255, 255, 255, 0.73);
+:root {
+  --background: #121212;
+  --primary-text: rgba(255, 255, 255, 87%);
+  --secondary-text: rgba(255, 255, 255, 0.73);
 
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background: var(--background);
-    color: var(--primary-text);
-    overflow-x: hidden;
+
+body {
+  background: var(--background);
+  color: var(--primary-text);
+  overflow-x: hidden;
 }
 
 .wave {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-    display: inline-block;
-  }
-  .cursor {
-    position: absolute;
-    width: 500px;
-    height: 5
-    00px;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
 
-    background: radial-gradient(
-      circle at center,
+.cursor {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+
+  background: radial-gradient(circle at center,
       #f1f1f115 0%,
-      rgba(245, 245, 245, 0) 60%
-    );
-    
-  }
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-    100% { transform: rotate( 0.0deg) }
-  }
+      rgba(245, 245, 245, 0) 60%);
 
-
- 
-  
-
-  @keyframes fadeInRight {
-        0%{
-            opacity: 0;
-            transform: translateX(100%);
-        }
-       
-        60%{
-            opacity: 1;
-            transform: translateX(0%);
-        }
-        80%{
-            opacity: 1;
-            transform: translateX(3%);
-        }
-        100%{
-            opacity: 1;
-            transform: translateX(0);
-        }
-  }
-
-  @keyframes fadeInLeft {
-    from{
-        transform: translateX(-100%);
-        opacity: 0;
-        
-
-    }
-    to{
-        transform: translateX(0%);
-        opacity: 1;
-    }
 }
-  
 
-  .hello{
-    opacity: 0;
-animation: fadeInRight 500ms ease-in-out forwards;
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
   }
-  .name{
-    opacity: 0;
-    animation: fadeInRight 500ms ease-in-out forwards;
-    animation-delay: 100ms;
+
+  10% {
+    transform: rotate(14.0deg)
   }
-  .description{
-    opacity: 0;
-    animation: fadeInRight 500ms ease-in-out forwards;
-    animation-delay: 200ms;
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
   }
-  .link1{
-    opacity: 0;
-    animation: fadeInLeft 300ms ease-in forwards;
-    animation-delay: 500ms;
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
 }
-.link2{
+
+
+
+
+
+@keyframes fadeInRight {
+  0% {
     opacity: 0;
-    animation: fadeInLeft 300ms ease-in forwards;
-    animation-delay: 700ms;
+    transform: translateX(100%);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(3%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.link3{
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100%);
     opacity: 0;
-    animation: fadeInLeft 300ms ease-in forwards;
-    animation-delay: 900ms;
+
+
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+.hello {
+  opacity: 0;
+  animation: fadeInRight 500ms ease-in-out forwards;
+}
+
+.name {
+  opacity: 0;
+  animation: fadeInRight 500ms ease-in-out forwards;
+  animation-delay: 100ms;
+}
+
+.description {
+  opacity: 0;
+  animation: fadeInRight 500ms ease-in-out forwards;
+  animation-delay: 200ms;
+}
+
+.link1 {
+  opacity: 0;
+  animation: fadeInLeft 300ms ease-in forwards;
+  animation-delay: 500ms;
+}
+
+.link2 {
+  opacity: 0;
+  animation: fadeInLeft 300ms ease-in forwards;
+  animation-delay: 700ms;
+}
+
+.link3 {
+  opacity: 0;
+  animation: fadeInLeft 300ms ease-in forwards;
+  animation-delay: 900ms;
 }
