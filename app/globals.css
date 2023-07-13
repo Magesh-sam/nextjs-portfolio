@@ -42,7 +42,7 @@ body {
   top: 0;
 
   background: radial-gradient(circle at center,
-      #f1f1f115 0%,
+      #f1f1f125 0%,
       rgba(245, 245, 245, 0) 60%);
 
 }
