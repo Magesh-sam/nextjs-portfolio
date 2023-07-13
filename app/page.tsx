@@ -5,7 +5,7 @@ import linkedin from '@/public/linkedin.svg'
 import mail from '@/public/mail.svg'
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center ml-[4%] gap-[50px] pt-[10%]   ">
+    <main className="flex flex-col justify-center ml-[4%] gap-[50px] pt-[10%] h-screen max-w-screen  ">
       <h1 className="hello text-6xl xl:text-7xl lg:text-8xl">Hello, <span className="wave">👋</span></h1>
       <h2 className="name text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
         I&apos;m <span className=" font-bold bg-clip-text  text-transparent bg-gradient-to-r from-purple-600  to-pink-500">Mageshkannan</span>
