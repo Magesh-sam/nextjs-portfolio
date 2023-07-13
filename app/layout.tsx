@@ -2,9 +2,9 @@ import { Navbar } from '@/components/Navbar';
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto_Mono } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const RM = Roboto_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   generator: 'Next.js',
@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={RM.className}>
         <Navbar/>
         {children}
       <Analytics/>
