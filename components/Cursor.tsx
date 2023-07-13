@@ -13,7 +13,8 @@ export const Cursor = () => {
                 setCursorX(e.clientX)
                 setCursorY(e.clientY)
                 const cursorWidth = cursorRef.current.offsetWidth;
-      const cursorHeight = cursorRef.current.offsetHeight;
+              const cursorHeight = cursorRef.current.offsetHeight;
+              
 
       const newX = cursorX - cursorWidth / 2;
                 const newY = cursorY - cursorHeight / 2;

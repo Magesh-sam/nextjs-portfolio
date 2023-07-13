@@ -1,10 +1,8 @@
-"use client";
 import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
-import { useEffect,useRef } from "react";
 import { Cursor } from "@/components/Cursor";
 
 const RM = Roboto_Mono({ subsets: ["latin"] });
@@ -41,14 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
   }) {
   
-  const cursorRef = useRef<any>();
-  const executeCursor = () => {
-    console.log(cursorRef?.current);
-  };
-
-  useEffect(() => {
-    executeCursor();
-  }, []);
+ 
 
   return (
     <html lang="en">
