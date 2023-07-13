@@ -5,7 +5,7 @@
 :root{
     --background:#121212;
     --primary-text:rgba(255, 255, 255, 87%);
-    --secondary-text: rgba(255, 255, 255, 73%);
+    --secondary-text: rgba(255, 255, 255, 0.73);
 
 }
 
@@ -38,3 +38,67 @@ body{
     100% { transform: rotate( 0.0deg) }
   }
   
+
+  @keyframes fadeInRight {
+        0%{
+            opacity: 0;
+            transform: translateX(100%);
+        }
+       
+        60%{
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        80%{
+            opacity: 1;
+            transform: translateX(3%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+  }
+
+  @keyframes fadeInLeft {
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+        
+
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+  
+
+  .hello{
+    opacity: 0;
+animation: fadeInRight 500ms ease-in-out forwards;
+  }
+  .name{
+    opacity: 0;
+    animation: fadeInRight 500ms ease-in-out forwards;
+    animation-delay: 100ms;
+  }
+  .description{
+    opacity: 0;
+    animation: fadeInRight 500ms ease-in-out forwards;
+    animation-delay: 200ms;
+  }
+  .link1{
+    opacity: 0;
+    animation: fadeInLeft 300ms ease-in forwards;
+    animation-delay: 500ms;
+}
+.link2{
+    opacity: 0;
+    animation: fadeInLeft 300ms ease-in forwards;
+    animation-delay: 700ms;
+}
+.link3{
+    opacity: 0;
+    animation: fadeInLeft 300ms ease-in forwards;
+    animation-delay: 900ms;
+}
