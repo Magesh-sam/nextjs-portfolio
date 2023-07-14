@@ -45,6 +45,8 @@ body {
       #f1f1f125 0%,
       rgba(245, 245, 245, 0) 60%);
 
+  z-index: 999;
+
 }
 
 @keyframes wave-animation {
@@ -83,78 +85,8 @@ body {
   }
 }
 
-
-
-
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
+@media all and (pointer: coarse) {
+  .cursor {
+    display: none;
   }
-
-  60% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-
-  80% {
-    opacity: 1;
-    transform: translateX(3%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-
-
-  }
-
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-
-.hello {
-  opacity: 0;
-  animation: fadeInRight 500ms ease-in-out forwards;
-}
-
-.name {
-  opacity: 0;
-  animation: fadeInRight 500ms ease-in-out forwards;
-  animation-delay: 100ms;
-}
-
-.description {
-  opacity: 0;
-  animation: fadeInRight 500ms ease-in-out forwards;
-  animation-delay: 200ms;
-}
-
-.link1 {
-  opacity: 0;
-  animation: fadeInLeft 300ms ease-in forwards;
-  animation-delay: 500ms;
-}
-
-.link2 {
-  opacity: 0;
-  animation: fadeInLeft 300ms ease-in forwards;
-  animation-delay: 700ms;
-}
-
-.link3 {
-  opacity: 0;
-  animation: fadeInLeft 300ms ease-in forwards;
-  animation-delay: 900ms;
 }

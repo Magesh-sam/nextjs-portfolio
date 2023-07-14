@@ -3,7 +3,6 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
-import { Cursor } from "@/components/Cursor";
 
 const RM = Roboto_Mono({ subsets: ["latin"] });
 
@@ -47,7 +46,6 @@ export default function RootLayout({
         <Navbar />
        
         {children}
-        <Cursor/>
         <Analytics />
       </body>
     </html>
