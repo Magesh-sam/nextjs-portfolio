@@ -1,24 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens: {
-      'xs': '420px',
-
-      'sm': '580px',
-
-      'md': '768px',
-
-      'lg': '1024px',
-
-      'xl': '1280px',
-
-      '2xl': '1536px',
-    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -29,3 +17,4 @@ module.exports = {
   },
   plugins: [],
 }
+export default config
