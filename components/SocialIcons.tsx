@@ -63,7 +63,6 @@ function SocialIcons() {
         href="https://www.instagram.com/m_a_g_e_s_h_sam/"
         title="instagram"
         target="_blank"
-        x
       >
         <Image
           src="/social-icons/insta.svg"
