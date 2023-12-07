@@ -4,21 +4,7 @@ import React from "react";
 
 function SocialIcons() {
   return (
-    <div className="social-icons fixed bottom-0 left-5 flex flex-col items-center gap-y-5">
-      <Link
-        href="mailto:mageshkannanam@gmail.com"
-        className="transition-all hover:-translate-y-1  "
-        title="mail"
-        target="_blank"
-      >
-        <Image
-          src={"/social-icons/gmail.svg"}
-          width={20}
-          height={20}
-          alt="mail"
-        />
-      </Link>
-
+    <div className="social-icons fixed bottom-0 left-5 hidden flex-col items-center gap-y-5 sm:flex">
       <Link
         className="transition-all hover:-translate-y-1  "
         href="https://github.com/Magesh-sam"

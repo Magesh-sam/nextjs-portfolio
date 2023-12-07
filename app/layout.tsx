@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import "aos/dist/aos.css";
 import Navbar from "@/components/Navbar";
+import { Open_Sans } from "next/font/google";
+import AOSWrapper from "@/components/AOSWrapper";
 
-const inter = Inter({ subsets: ["latin"] });
+const Sans = Open_Sans({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Mageshkannan Portfolio",
@@ -17,10 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={(inter.className, "antialiased")}>
-        <Navbar />
+      <body className={(Sans.className, "antialiased")}>
+        <AOSWrapper>
+          <Navbar />
 
-        {children}
+          {children}
+        </AOSWrapper>
       </body>
     </html>
   );
