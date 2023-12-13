@@ -21,7 +21,6 @@ function SingleProject({
 }: SingleProjectProps) {
   return (
     <div
-      data-aos="fade-right"
       className="single-project project-shadow   mx-2 flex max-w-2xl flex-col items-center gap-3 rounded-lg border border-transparent bg-[#272727] px-5  py-2 backdrop-blur-sm hover:border-violet-500 md:flex-row  "
     >
       <div className="min-h-[200px] min-w-[300px] overflow-hidden">

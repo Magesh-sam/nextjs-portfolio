@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "aos/dist/aos.css";
 import Navbar from "@/components/Navbar";
 import { Open_Sans } from "next/font/google";
-import AOSWrapper from "@/components/AOSWrapper";
 
 const Sans = Open_Sans({
   subsets: ["latin"],
@@ -22,11 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={(Sans.className, "antialiased")}>
-        <AOSWrapper>
           <Navbar />
 
           {children}
-        </AOSWrapper>
       </body>
     </html>
   );
