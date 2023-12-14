@@ -1,87 +1,44 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Image from "next/image";
+import { roboto_mono } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 
 function HeroSection() {
   return (
-    <section
-      id="home"
-      className="flex min-h-screen  flex-col items-center  justify-evenly gap-y-3 px-5 lg:flex-row "
-    >
-      <div className="flex flex-col gap-3  ">
-        <Image
-          src="/undraw_code.svg"
-          alt="profile"
-          width={30}
-          height={30}
-          className="-top-10"
-        />
-        <h1
-  
-          className="text-base sm:text-lg md:text-xl lg:text-2xl "
-        >
-          Hi👋, I&apos;m
-        </h1>
-        <h2
-  
-          className="w-max bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text py-2  text-3xl  font-bold text-transparent sm:text-4xl  md:text-5xl "
-        >
-          Mageshkannan
-        </h2>
-
-        <div className="flex gap-3">
-          <h3
-            className="text-2xl  sm:text-3xl md:text-4xl   "
-            style={{ lineHeight: 1.2 }}
-   
-          >
-            Creative{" "}
-            <span className="w-max bg-gradient-to-r  from-purple-600 to-pink-500 bg-clip-text  font-semibold text-transparent">
-              Frond-end{" "}
-            </span>
-            Web Developer !
-          </h3>
-        </div>
-        <p
- 
-          className="max-w-3xl text-lg text-[#FAFAFA90] lg:text-xl "
-          style={{ lineHeight: 1.5 }}
-        >
-          I&apos;m From India 🇮🇳, I love building interactive , Engaging and
-          Entertaining Websites and Web Applications
-        </p>
-        <Image
-          src="/undraw_code.svg"
-          alt="profile"
-          width={30}
-          height={30}
-          className="bottom-10"
-        />
-        <div className="flex gap-3" >
-          <Link
-            className=" mt-2 max-w-min whitespace-nowrap rounded-md border-2 border-violet-500 bg-violet-500 px-2 py-2 transition-all  hover:bg-transparent"
-            href="mailto:mageshkannanam@gmail.com"
-            target="_blank"
-          >
-            Contact me
-          </Link>
-          <Link
-            className="sliding-background relative  mt-2 max-w-min whitespace-nowrap rounded-md border-2 border-violet-500 px-2 py-2"
-            href="https://www.canva.com/design/DAFpdYxWYME/8S-lldLZZmTrWfPzOTGpZg/view?utm_content=DAFpdYxWYME&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-            target="_blank"
-          >
-            View Resume{" "}
-          </Link>
-        </div>
-      </div>
+    <section className="mb-5 flex flex-col px-3 ">
+      <span
+        className={cn(
+          roboto_mono.className,
+          "htmltag font-rbmono text-slate-400",
+        )}
+      >{`<hero section>`}</span>
+      <h1 className="text-xl md:text-2xl">
+        Hello World{" "}
+        <span className="inline-block origin-wave animate-wave">👋</span>, I am{" "}
+      </h1>
+      <h2 className="w-max bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text py-2   text-3xl font-bold text-transparent md:pb-3 md:text-4xl ">
+        Mageshkannan
+      </h2>
       <Image
-    
-        src="/hero-image.svg"
-        alt="developer working illustration"
-        width={500}
-        height={300}
+        src="/profile.jpg"
+        alt="profile picture"
+        width={300}
+        height={250}
+        className="mb-3 w-full max-w-lg  rounded-lg grayscale filter transition duration-300 ease-in hover:filter-none "
         priority
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAbEAACAQUAAAAAAAAAAAAAAAAAAwUBAhESIf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQACETH/2gAMAwEAAhEDEQA/AIyc/Iok3rW/Wy3GKa05wAE1rO9iIT//2Q=="
       />
+      <h3 className="text-wrap-balanced text-xl md:text-3xl">
+        Creative{" "}
+        <span className="w-max bg-gradient-to-r  from-purple-600 to-pink-500 bg-clip-text  font-semibold text-transparent">
+          Frond-end
+        </span>{" "}
+        Web Developer !
+      </h3>
+      <span
+        className={`${roboto_mono.className}  htmltag font-rbmono text-slate-400`}
+      >{`</hero section>`}</span>
     </section>
   );
 }

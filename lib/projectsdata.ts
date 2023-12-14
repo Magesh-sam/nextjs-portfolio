@@ -1,6 +1,4 @@
-import { SingleProjectProps } from "@/components/SingleProject";
-
-export const ProjectData: SingleProjectProps[] = [
+export const ProjectData = [
   {
     src: "/project-images/nextstore.jpg",
     title: "Next Store",

@@ -1,14 +1,13 @@
+import AboutSection from "@/components/AboutSection";
 import HeroSection from "@/components/HeroSection";
-import React from "react";
-import SocialIcons from "@/components/SocialIcons";
-import ProjectSection from "@/components/ProjectSection";
+import Timeline from "@/components/Timeline";
 
 function Page() {
   return (
-    <main className="  flex min-h-screen max-w-full flex-col items-center ">
+    <main className="   mx-auto  flex max-w-5xl flex-col  gap-y-6    pt-10 ">
       <HeroSection />
-      <SocialIcons />
-      <ProjectSection />
+      <AboutSection />
+      <Timeline />
     </main>
   );
 }

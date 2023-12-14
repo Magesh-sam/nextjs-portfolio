@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { Open_Sans } from "next/font/google";
-
-const Sans = Open_Sans({
-  subsets: ["latin"],
-});
+import { poppins } from "@/lib/fonts";
+import Rainforest from "@/components/Rainforest";
 
 export const metadata: Metadata = {
   title: "Mageshkannan Portfolio",
@@ -19,10 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={(Sans.className, "antialiased")}>
-          <Navbar />
-
-          {children}
+      <body className={`${poppins.className}   relative antialiased`}>
+        <Navbar />
+        {children}
+        <Rainforest />
       </body>
     </html>
   );
