@@ -1,12 +1,24 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
+import { slideIn } from "@/lib/animations";
 
 function AboutSection() {
   return (
     <article className="mb-5 flex flex-col gap-y-3 px-3">
-      <h2 className="text-3xl underline underline-offset-8">About</h2>
+      <h2 className=" w-max bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-3xl font-bold text-transparent">
+        About
+      </h2>
       {/* //* I&apos;m is equal to I'm */}
       <section className="mt-3 flex flex-col gap-y-5">
-        <p className="  text-wrap-balanced text-tee  items-center break-words text-left indent-10 text-lg font-normal">
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          variants={slideIn}
+          transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className="  text-wrap-balanced text-tee  items-center break-words text-left indent-10 text-lg font-normal"
+        >
           Hello, I&apos;m Mageshkannan and I&apos;m a front-end developer from
           India{" "}
           <span>
@@ -39,19 +51,33 @@ function AboutSection() {
           </span>{" "}
           I love to build creative and engaging front end web applications. I
           breath 0s and 1s.
-        </p>
-        <p className=" text-wrap-balanced  items-center break-words indent-10 text-lg font-normal">
+        </motion.p>
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          variants={slideIn}
+          transition={{ duration: 0.5, delay: 1.3, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className=" text-wrap-balanced  items-center break-words indent-10 text-lg font-normal"
+        >
           Besides coding, you&apos;ll catch me traveling around ✈️, soaking in
           the vibes of different places 🗺️, and diving into the world of food
           and culture. Speaking of which, Chicken Biryani🍗 is my ultimate love
           😋.
-        </p>
-        <p className=" text-wrap-balanced  items-center break-words indent-10 text-lg font-normal">
+        </motion.p>
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          variants={slideIn}
+          transition={{ duration: 0.5, delay: 1.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className=" text-wrap-balanced  items-center break-words indent-10 text-lg font-normal"
+        >
           Nature is my happy place 🌳, and I&apos;m all about that swim life 🏊.
           Oh, and wildlife photography?📸 Absolutely love it! Elephants🐘,
           Tigers🐯, Rhinos🦏, Crocs🐊, Whales🐳, Sea Turtles🐢, Hornbills,
           Owls🦉, Penguins🐧... you name it, I&apos;m smitten ❤️!
-        </p>
+        </motion.p>
       </section>
     </article>
   );

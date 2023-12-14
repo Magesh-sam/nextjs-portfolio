@@ -26,10 +26,6 @@ const config: Config = {
       transformOrigin: {
         wave: "70% 70%",
       },
-      fontFamily: {
-        poppins: ["var(--font-poppins)"],
-        rbmono: ["var(--font-roboto-mono)"],
-      },
     },
   },
   plugins: [],

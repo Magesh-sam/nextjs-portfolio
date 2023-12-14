@@ -42,7 +42,7 @@ function Rainforest() {
   }, [isPlaying]);
 
   return (
-    <div className="fixed bottom-10 left-0">
+    <div className="fixed bottom-10 right-0">
       <audio
         ref={audioRef}
         src="../assets/rainforest.mp3"
