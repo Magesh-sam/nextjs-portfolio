@@ -14,16 +14,15 @@ function Navbar() {
         width={50}
         height={50}
         title="Magesh - The Front-end Developer"
-        className=" slide-down duration transition duration-300 ease-in "
       />
       <ul className="mr-8 flex gap-5 text-lg">
-        <li className="navlink-hover  navlinkOne relative ">
+        <li className="navlink-hover   relative ">
           <Link href="/">Home</Link>
         </li>
-        <li className="navlink-hover  navlinkTwo relative">
+        <li className="navlink-hover   relative">
           <Link href="/projects">Projects</Link>
         </li>
-        <li className="navlink-hover  navlinkThree relative">
+        <li className="navlink-hover   relative">
           <Link href="/">Blogs</Link>
         </li>
       </ul>
