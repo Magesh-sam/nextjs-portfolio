@@ -4,6 +4,9 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { poppins } from "@/lib/fonts";
 import Rainforest from "@/components/Rainforest";
+import { Suspense } from "react";
+import { Skeleton } from "@/components/Skeleton";
+import SocialIcons from "@/components/SocialIcons";
 
 export const metadata: Metadata = {
   title: "Mageshkannan Portfolio",
@@ -20,7 +23,9 @@ export default function RootLayout({
       <body className={`${poppins.className}   relative antialiased`}>
         <Navbar />
         {children}
-        <Rainforest />
+        <Suspense fallback={<Skeleton className="h-8 w-8" />}>
+          <Rainforest />
+        </Suspense>
       </body>
     </html>
   );

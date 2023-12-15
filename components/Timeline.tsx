@@ -11,8 +11,8 @@ const TimelineItem = ({
 }) => {
   return (
     <div className="group mb-8 flex max-w-max items-center border-b-2 border-slate-700 pb-3 ">
-      <div className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-gray-400 transition-all duration-300 ease-in group-hover:h-8 group-hover:w-8">
-        <div className="h-2 w-2 rounded-full bg-gray-400 transition-all duration-200 ease-in group-hover:bg-white"></div>
+      <div className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-gray-400 transition-all duration-300 ease-in group-hover:h-8 group-hover:w-8 group-hover:border-purple-500">
+        <div className="h-2 w-2 rounded-full bg-gray-400 transition-all duration-200 ease-in group-hover:bg-pink-500 "></div>
       </div>
       <div className="ml-4 transition-all">
         <h3 className="text-2xl font-medium">{date}</h3>
@@ -25,7 +25,7 @@ const TimelineItem = ({
 
 const Timeline = () => {
   return (
-    <div className="flex flex-col gap-y-5">
+    <div className="flex flex-col gap-y-5 px-3">
       <TimelineItem
         date="Apr 2021 - Jul 2023"
         title="Senior Software Engineer"

@@ -26,6 +26,9 @@ const config: Config = {
       transformOrigin: {
         wave: "70% 70%",
       },
+      boxShadow: {
+        neo: "4px 6px 0 0 #fafafa",
+      },
     },
   },
   plugins: [],
