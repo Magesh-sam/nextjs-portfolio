@@ -35,7 +35,7 @@ function HeroSection() {
         <span className="w-max bg-gradient-to-r  from-purple-600 to-pink-500 bg-clip-text  font-semibold text-transparent">
           Frond-end
         </span>{" "}
-        Web Developer !
+        Web Developer&nbsp;!
       </h3>
       <span
         className={`${roboto_mono.className}  htmltag font-rbmono text-slate-400`}

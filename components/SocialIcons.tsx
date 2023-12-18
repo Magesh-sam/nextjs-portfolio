@@ -12,7 +12,6 @@ const socialLinkData = [
         height={24}
         viewBox="0 0 20 20"
       >
-        <title>{"github [#fafafa142]"}</title>
         <path
           fill="#fafafa"
           className="group-hover:fill-pink-500"
@@ -31,9 +30,7 @@ const socialLinkData = [
         width={24}
         height={24}
         fill="none"
-        stroke="#fafafa"
         viewBox="0 0 24 24"
-        className="group-hover:stroke-pink-500"
       >
         <path
           className="group-hover:fill-pink-500 "

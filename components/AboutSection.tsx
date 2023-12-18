@@ -16,8 +16,8 @@ function AboutSection() {
         <SocialIcons />
       </div>
       {/* //* I&apos;m is equal to I'm */}
-      <section className="mt-3 flex flex-col gap-y-5">
-        <p className="  text-wrap-balanced text-tee  items-center break-words text-left indent-10 text-lg font-normal">
+      <section className="mb-3 mt-3 flex flex-col gap-y-5">
+        <p className="  text-wrap-balanced text-tee  items-center break-words text-left  text-lg font-normal">
           Hello, I&apos;m Mageshkannan and I&apos;m a front-end developer from
           India{" "}
           <span>
@@ -51,21 +51,21 @@ function AboutSection() {
           I love to build creative and engaging front end web applications. I
           breath 0s and 1s.
         </p>
-        <p className=" text-wrap-balanced  items-center break-words indent-10 text-lg font-normal">
+        <p className=" text-wrap-balanced  items-center break-words  text-lg font-normal">
           Besides coding, you&apos;ll catch me traveling around ✈️, soaking in
           the vibes of different places 🗺️, and diving into the world of food
           and culture. Speaking of which, Chicken Biryani🍗 is my ultimate love
           😋.
         </p>
-        <p className=" text-wrap-balanced  items-center break-words indent-10 text-lg font-normal">
+        <p className=" text-wrap-balanced  items-center break-words  text-lg font-normal">
           Nature is my happy place 🌳, and I&apos;m all about that swim life 🏊.
           Oh, and wildlife photography?📸 Absolutely love it! Elephants🐘,
           Tigers🐯, Rhinos🦏, Crocs🐊, Whales🐳, Sea Turtles🐢, Hornbills,
-          Owls🦉, Penguins🐧... you name it, I&apos;m smitten ❤️!
+          Owls🦉, Penguins🐧... you name it, I&apos;m smitten&nbsp;❤️
         </p>
       </section>
       <Link
-        className="shadow-neo max-w-fit border-2 border-[#fafafa] px-3 py-2 transition duration-300 ease-in  hover:shadow-none"
+        className={`max-w-fit border-2 border-[#fafafa] px-3 py-2 shadow-neo transition duration-300 ease-in  hover:shadow-none ${roboto_mono.className}`}
         href="https://www.canva.com/design/DAFpdYxWYME/8S-lldLZZmTrWfPzOTGpZg/view?utm_content=DAFpdYxWYME&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
         target="_blank"
       >
