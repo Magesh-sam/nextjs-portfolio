@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://mageshkannan.vercel.app/",
     siteName: "Mageshkannan Portfolio",
     images: {
-      url: "https://mageshkannan.vercel.app/ogimg.png",
+      url: "https://mageshkannan.vercel.app/ogimg.jpg",
       width: 1200,
       height: 700,
     },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description:
       "I'm Mageshkannan and I'm a front-end developer from India. other than coding I love swimming, exploring nature, food, culture and doing wildlife photography 🐳🐯 ",
     creator: "@mageshkannan",
-    images: ["https://mageshkannan.vercel.app/ogimg.png"],
+    images: ["https://mageshkannan.vercel.app/ogimg.jpg"],
   },
   robots: {
     index: true,

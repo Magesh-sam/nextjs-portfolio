@@ -1,4 +1,5 @@
 import FeaturedProjects from "@/components/FeaturedProjects";
+import SkillsSection from "@/components/SkillsSection";
 import { roboto_mono } from "@/lib/fonts";
 
 function page() {
@@ -18,6 +19,7 @@ function page() {
         Featured Projects
       </h2>
       <FeaturedProjects />
+      <SkillsSection />
     </main>
   );
 }
