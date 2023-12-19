@@ -23,7 +23,7 @@ function SkillsSection() {
       >
         Skills/Tech Stack
       </h2>
-      <div className="mx-auto mt-5 flex max-w-md flex-wrap  gap-5 lg:max-w-xl">
+      <div className="mx-auto mt-5 flex max-w-md flex-wrap  justify-center gap-5 lg:max-w-xl">
         <HTMLIcon />
         <CSSIcon />
         <TailwindIcon />
