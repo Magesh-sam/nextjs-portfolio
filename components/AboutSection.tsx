@@ -65,7 +65,7 @@ function AboutSection() {
         </p>
       </section>
       <Link
-        className={`max-w-fit border-2 border-[#fafafa] px-3 py-2 shadow-neo transition duration-300 ease-in  hover:shadow-none ${roboto_mono.className}`}
+        className={`max-w-fit border-2 border-pink-500 px-3 py-2 shadow-neo transition duration-300 ease-in  hover:shadow-none ${roboto_mono.className}`}
         href="https://www.canva.com/design/DAFpdYxWYME/8S-lldLZZmTrWfPzOTGpZg/view?utm_content=DAFpdYxWYME&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
         target="_blank"
       >

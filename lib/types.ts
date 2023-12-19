@@ -1,5 +1,5 @@
 export type ProjectCardProps = {
-  
+
   imageSrc: string;
   title: string;
   description: string;

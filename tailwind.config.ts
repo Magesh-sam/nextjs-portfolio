@@ -27,7 +27,7 @@ const config: Config = {
         wave: "70% 70%",
       },
       boxShadow: {
-        neo: "4px 6px 0 0 #fafafa",
+        neo: "4px 6px 0 0 #EC4899",
       },
     },
   },
