@@ -23,7 +23,7 @@ function Navbar() {
           <Link href="/projects">Projects</Link>
         </li>
         <li className="navlink-hover   relative">
-          <Link href="/">Blogs</Link>
+          <Link href="/blog">Blogs</Link>
         </li>
       </ul>
     </nav>
