@@ -8,13 +8,15 @@ function Navbar() {
     <nav
       className={`${roboto_mono.className} sticky top-0 z-10 flex w-full items-center justify-between  bg-[#fafafa10] p-3 shadow-md backdrop-blur-md`}
     >
-      <Image
-        src="/m.png"
-        alt="logo letter M"
-        width={50}
-        height={50}
-        title="Magesh - The Front-end Developer"
-      />
+      <Link href="/" className="cursor-pointer">
+        <Image
+          src="/m.png"
+          alt="logo letter M"
+          width={50}
+          height={50}
+          title="Magesh - The Front-end Developer"
+        />
+      </Link>
       <ul className="mr-8 flex gap-5 text-lg">
         <li className="navlink-hover   relative ">
           <Link href="/">Home</Link>
@@ -23,7 +25,7 @@ function Navbar() {
           <Link href="/projects">Projects</Link>
         </li>
         <li className="navlink-hover   relative">
-          <Link href="/blog">Blogs</Link>
+          <Link href="/blogs">Blogs</Link>
         </li>
       </ul>
     </nav>

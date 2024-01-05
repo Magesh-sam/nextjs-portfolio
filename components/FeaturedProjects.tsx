@@ -12,7 +12,7 @@ function FeaturedProjects() {
         ))}
       </section>
       <Link
-        href="#"
+        href="https://github.com/Magesh-sam?tab=repositories"
         className="navlink-hover group relative mx-3 flex max-w-fit  items-center gap-2 transition-all hover:gap-4 "
       >
         View All Projects <span>&rarr;</span>

@@ -17,7 +17,7 @@ import { roboto_mono } from "@/lib/fonts";
 
 function SkillsSection() {
   return (
-    <section className="my-5">
+    <section className="mb-14 mt-5">
       <h2
         className={` ${roboto_mono.className} w-max bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-2xl font-extrabold text-transparent sm:text-3xl lg:text-4xl`}
       >

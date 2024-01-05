@@ -1,6 +1,8 @@
 import FeaturedProjects from "@/components/FeaturedProjects";
+import { Skeleton } from "@/components/Skeleton";
 import SkillsSection from "@/components/SkillsSection";
 import { roboto_mono } from "@/lib/fonts";
+import { Suspense } from "react";
 
 function page() {
   return (
@@ -18,8 +20,28 @@ function page() {
       >
         Featured Projects
       </h2>
-      <FeaturedProjects />
-      <SkillsSection />
+      <Suspense
+        fallback={
+          <div className="flex-gap flex gap-y-10">
+            <Skeleton className="h-300 h-auto w-full" />
+            <Skeleton className="h-300 h-auto w-full" />
+            <Skeleton className="h-300 h-auto w-full" />
+          </div>
+        }
+      >
+        <FeaturedProjects />
+      </Suspense>
+      <Suspense
+        fallback={
+          <div className="gap3 flex flex-wrap">
+            <Skeleton className="h-40 w-40" />
+            <Skeleton className="h-40 w-40" />
+            <Skeleton className="h-40 w-40" />
+          </div>
+        }
+      >
+        <SkillsSection />
+      </Suspense>
     </main>
   );
 }

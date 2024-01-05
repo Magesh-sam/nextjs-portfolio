@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import { roboto_mono } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
