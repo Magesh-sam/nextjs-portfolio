@@ -9,16 +9,9 @@ export type ProjectCardProps = {
 };
 
 export type BlogProps = {
-  cuid: string;
-  url: string;
   title: string;
-  publishedAt: string;
   views: number;
-  tags: {
-    name: string;
-  }[];
+  coverImage: string;
+  cuid: string;
   slug: string;
-  coverImage: {
-    url: string;
-  };
 };
