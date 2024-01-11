@@ -2,7 +2,45 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import { Skeleton } from "@/components/Skeleton";
 import SkillsSection from "@/components/SkillsSection";
 import { roboto_mono } from "@/lib/fonts";
+import { Metadata } from "next";
 import { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: "Projects | Mageshkannan Portfolio",
+  description:
+    "I'm Mageshkannan and I'm a front-end developer from India. other than coding I love swimming, exploring nature, food, culture and doing wildlife photography 🐳🐯 ",
+  openGraph: {
+    title: "Mageshkannan Portfolio",
+    description:
+      "I'm Mageshkannan and I'm a front-end developer from India. other than coding I love swimming, exploring nature, food, culture and doing wildlife photography 🐳🐯 ",
+    url: "https://mageshkannan.vercel.app/",
+    siteName: "Mageshkannan Portfolio",
+    images: {
+      url: "https://mageshkannan.vercel.app/ogimg.jpg",
+      width: 1200,
+      height: 700,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mageshkannan Portfolio",
+    description:
+      "I'm Mageshkannan and I'm a front-end developer from India. other than coding I love swimming, exploring nature, food, culture and doing wildlife photography 🐳🐯 ",
+    creator: "@mageshkannan",
+    images: ["https://mageshkannan.vercel.app/ogimg.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
 
 function page() {
   return (

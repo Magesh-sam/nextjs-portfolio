@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -63,6 +64,7 @@ export default function RootLayout({
         <Suspense fallback={<Skeleton className="h-8 w-8" />}>
           <Rainforest />
         </Suspense>
+        <Analytics />
       </body>
     </html>
   );
