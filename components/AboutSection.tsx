@@ -66,7 +66,7 @@ function AboutSection() {
       </section>
       <Link
         className={`max-w-fit border-2 border-pink-500 px-3 py-2 shadow-neo transition duration-300 ease-in  hover:shadow-none ${roboto_mono.className}`}
-        href="https://www.canva.com/design/DAFpdYxWYME/8S-lldLZZmTrWfPzOTGpZg/view?utm_content=DAFpdYxWYME&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+        href="../assets/Mageshkannan_Front_end_Developer.pdf"
         target="_blank"
       >
         View Resume
