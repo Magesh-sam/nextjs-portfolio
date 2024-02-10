@@ -1,9 +1,9 @@
-export const revalidate = 3600; // revalidate at most every hour
 import Blog from "@/components/Blog";
 import { Skeleton } from "@/components/Skeleton";
 import { BlogProps } from "@/lib/types";
 import { Metadata } from "next";
-import React, { Fragment, Suspense } from "react";
+import Image from "next/image";
+import React, {  Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Blogs | Mageshkannan Portfolio",
@@ -40,40 +40,41 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-};
+};  
 
-const fetchBlogPosts = async () => {
-  const query = `
-    {
-      user(username: "mageshkannan") {
-          publication {
-              posts(page: 0) {
-                  title
-                  views
-                  coverImage
-                  cuid
-                  slug
-              }
-          }
-          }
-      }
-        `;
-  const response = await fetch("https://api.hashnode.com/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ query }),
-  });
+// const fetchBlogPosts = async () => {
+//   const query = `
+//     {
+//       user(username: "mageshkannan") {
+//           publication {
+//               posts(page: 0) {
+//                   title
+//                   views
+//                   coverImage
+//                   cuid
+//                   slug
+//               }
+//           }
+//           }
+//       }
+//         `;
+//   const response = await fetch("https://api.hashnode.com/", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({ query }),
+//   });
 
-  const data = await response.json();
+//   const data = await response.json();
+//   console.log("entire data",data)
+//   const PostData = await data.data.user.publication.posts;
+//   console.log("post data",PostData)
+//   return PostData || {};
+// };
 
-  const PostData = await data.data.user.publication.posts;
-  return PostData || {};
-};
-
-async function page() {
-  const PostData = await fetchBlogPosts();
+async function Page() {
+  // const PostData = await fetchBlogPosts();
   return (
     <main className=" mx-auto   flex max-w-5xl  flex-col  gap-y-6  px-3 pt-10">
       <div className="flex h-20 w-full  items-center justify-center bg-gradient-to-r from-purple-600 to-pink-500 ">
@@ -84,7 +85,12 @@ async function page() {
           Blogs
         </h1>
       </div>
-      <Suspense
+      <section className="container flex flex-col mt-3 mx-auto">
+        <Image src="/updating.svg" width={500} height={500} alt="updating page" />
+        <h2 className="text-xl mt-3">Migrating the blogs to the new API</h2>
+        <h3 className="text-xl mt-3">Soon It will be updated</h3>
+      </section>
+      {/* <Suspense
         fallback={
           <div className="flex flex-col gap-10">
             <Skeleton className="h-300 h-auto w-full " />
@@ -102,9 +108,9 @@ async function page() {
             />
           ))}
         </section>
-      </Suspense>
+      </Suspense> */}
     </main>
   );
 }
 
-export default page;
+export default Page;
