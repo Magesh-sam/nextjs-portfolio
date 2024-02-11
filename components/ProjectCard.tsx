@@ -2,7 +2,7 @@ import { ProjectCardProps } from "@/lib/types";
 import Link from "next/link";
 import Image from "next/image";
 import React, { FC } from "react";
-import SkillChip from "./SkillChip";
+import Chip from "./Chip";
 
 const ProjectCard: FC<ProjectCardProps> = ({
   title,
@@ -29,7 +29,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <p className=" max-w-md text-left font-normal">{description}</p>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill) => (
-            <SkillChip key={skill} skill={skill} />
+            <Chip key={skill} name={skill} />
           ))}
         </div>
         <div className=" flex items-center gap-x-3">

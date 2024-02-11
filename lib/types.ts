@@ -1,4 +1,3 @@
-import { blogsData } from "./blogs";
 export type ProjectCardProps = {
   imageSrc: string;
   title: string;
@@ -10,8 +9,19 @@ export type ProjectCardProps = {
 
 export type BlogProps = {
   title: string;
+  readTimeInMinutes: number;
   views: number;
-  coverImage: string;
+  coverImage: {
+    url: string;
+  };
   cuid: string;
   slug: string;
+  brief: string;
+  tags: {
+    name: string;
+  }[];
 };
+
+export interface BlogPostArray {
+  node: BlogProps;
+}
