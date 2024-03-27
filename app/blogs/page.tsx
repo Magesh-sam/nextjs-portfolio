@@ -2,7 +2,9 @@ import Blog from "@/components/Blog";
 import { Skeleton } from "@/components/Skeleton";
 import { BlogPostArray } from "@/lib/types";
 import { Metadata } from "next";
-import React, {  Suspense } from "react";
+import React, { Suspense } from "react";
+const dynamic = 'force-dynamic'
+const revalidate = 0
 
 export const metadata: Metadata = {
   title: "Blogs | Mageshkannan Portfolio",
@@ -71,6 +73,9 @@ const fetchBlogPosts = async () => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ query }),
+    next: {
+      revalidate: 0,
+    }
   });
 
   const data = await response.json();
