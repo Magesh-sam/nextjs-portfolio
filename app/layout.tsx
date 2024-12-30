@@ -5,9 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { poppins } from "@/lib/fonts";
-import Rainforest from "@/components/Rainforest";
-import { Suspense } from "react";
-import { Skeleton } from "@/components/Skeleton";
+
 
 export const metadata: Metadata = {
   title: "Mageshkannan Portfolio",
@@ -62,9 +60,7 @@ export default function RootLayout({
       <body className={`${poppins.className}   relative antialiased`}>
         <Navbar />
         {children}
-        <Suspense fallback={<Skeleton className="h-8 w-8" />}>
-          <Rainforest />
-        </Suspense>
+
         <SpeedInsights />
         <Analytics />
       </body>
