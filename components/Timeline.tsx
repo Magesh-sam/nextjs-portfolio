@@ -27,6 +27,11 @@ const Timeline = () => {
   return (
     <div className="flex flex-col gap-y-5 px-3">
       <TimelineItem
+        date="Apr 2024 - Mar 2025"
+        title="Senior Software Engineer"
+        description="EY GDS, India"
+      />
+      <TimelineItem
         date="Apr 2021 - Jul 2023"
         title="Senior Software Engineer"
         description="Capgemini Technologies, India"
