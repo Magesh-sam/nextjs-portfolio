@@ -18,6 +18,15 @@ export const ProjectData: ProjectCardProps[] = [
     ],
   },
   {
+    imageSrc: "/project-images/job-portal.png",
+    title: "Job Portal",
+    description:
+      "A job portal built with React + TS + React Query + React Hoook Form + Shadcn UI + Tailwind.",
+    demo: "",
+    source: "https://github.com/Magesh-sam/job-portal",
+    skills: ["React.js", "Typescript", "Tanstack Query", "React Hook Form"],
+  },
+  {
     imageSrc: "/project-images/dummyuser.jpg",
     title: "Dummy user API",
     description:
